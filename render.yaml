@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: safestride
+    name: safestride-banking
     env: node
-    buildCommand: cd backend && npm run install:all && npm run build
+    buildCommand: ./build.sh
     startCommand: cd backend && npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 10000 
+        value: 3001 

@@ -29,12 +29,29 @@
 
 5. **Click "Create Web Service"**
 
-### 3. **Environment Variables (Optional)**
+### 3. **Alternative Build Commands (if above doesn't work)**
+
+**Option 1: Using build script**
+```bash
+chmod +x build.sh && ./build.sh
+```
+
+**Option 2: Manual step-by-step**
+```bash
+npm install && cd frontend && npm install && npm run build && cp -r build ../backend/public
+```
+
+**Option 3: Using npm scripts**
+```bash
+npm run build:render
+```
+
+### 4. **Environment Variables (Optional)**
 Add these in Render dashboard:
 - `NODE_ENV=production`
 - `PORT=3001`
 
-### 4. **Wait for Deployment**
+### 5. **Wait for Deployment**
 - Render will automatically build and deploy your app
 - You'll get a URL like: `https://safestride-banking.onrender.com`
 
@@ -48,6 +65,7 @@ Add these in Render dashboard:
 ### Build Fails
 - Check that all dependencies are in package.json
 - Ensure Node.js version is 16+ in package.json
+- Try the alternative build commands above
 
 ### App Won't Start
 - Verify the start command points to the correct directory
