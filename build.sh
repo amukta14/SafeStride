@@ -26,4 +26,13 @@ npm run build
 echo "📋 Copying build to backend..."
 cp -r build ../backend/public
 
+# Install backend dependencies
+echo "📦 Installing backend dependencies..."
+cd ../backend
+npm install
+
+# Build backend (compile TypeScript)
+echo "🔨 Building backend..."
+npm run build
+
 echo "✅ Build completed successfully!" 

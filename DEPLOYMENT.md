@@ -19,7 +19,7 @@
    
    **Build Command:** 
    ```bash
-   npm install && cd frontend && npm install && npm run build && cp -r build ../backend/public
+   npm install && cd frontend && npm install && npm run build && cp -r build ../backend/public && cd ../backend && npm install && npm run build
    ```
    
    **Start Command:**
@@ -38,7 +38,7 @@ chmod +x build.sh && ./build.sh
 
 **Option 2: Manual step-by-step**
 ```bash
-npm install && cd frontend && npm install && npm run build && cp -r build ../backend/public
+npm install && cd frontend && npm install && npm run build && cp -r build ../backend/public && cd ../backend && npm install && npm run build
 ```
 
 **Option 3: Using npm scripts**
