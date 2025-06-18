@@ -1,7 +1,7 @@
 {
   "name": "safestride-banking",
   "env": "node",
-  "buildCommand": "npm install && cd frontend && npm install --production=false && npm run build && cp -r build ../backend/public",
+  "buildCommand": "./build.sh",
   "startCommand": "cd backend && npm start",
   "envVars": [
     {
