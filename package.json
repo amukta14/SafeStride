@@ -5,11 +5,11 @@
   "main": "backend/dist/server.js",
   "scripts": {
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "build": "cd frontend && npm run build && cp -r build ../backend/public",
+    "build": "cd frontend && npm install --production=false && npm run build && cp -r build ../backend/public",
     "start": "cd backend && npm start",
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
     "build:backend": "cd backend && npm run build",
-    "build:frontend": "cd frontend && npm run build",
+    "build:frontend": "cd frontend && npm install --production=false && npm run build",
     "deploy": "npm run build && npm start"
   },
   "keywords": [
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/safestride-banking.git"
+    "url": "https://github.com/amukta14/SafeStride.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/safestride-banking/issues"
+    "url": "https://github.com/amukta14/SafeStride/issues"
   },
   "homepage": "https://safestride-banking.onrender.com"
 } 
