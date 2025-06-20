@@ -4,6 +4,10 @@
 
 SafeStride is a revolutionary mobile banking security solution that implements continuous, behavior-based authentication to protect users from sophisticated cyber threats while maintaining seamless user experience.
 
+<img width="1667" alt="Screenshot 2025-06-20 at 12 44 42 PM" src="https://github.com/user-attachments/assets/881af809-5415-4aeb-a15b-8933495d4ee2" />
+<img width="1694" alt="Screenshot 2025-06-20 at 12 45 03 PM" src="https://github.com/user-attachments/assets/b98b566b-010e-4bf2-8474-e6154f3da631" />
+
+
 ## The Challenge
 
 Traditional authentication methods in mobile banking are vulnerable to sophisticated attacks:
